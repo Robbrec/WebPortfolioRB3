@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+    background-color: #f8f8f8; /* Light background color */
+    text-align: center; /* Center the logo */
+    padding: 10px 0; /* Add space above and below the logo */
+}
+
+/* Style the logo banner image */
+.logo-banner {
+    max-width: 100%; /* Ensure the image fits in the container */
+    height: auto; /* Maintain image proportions */
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5pz rgba(0, 0, 0, 0.1);
+}
+
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-bar li {
+    margin: 0 15px;
+}
+
+.menu-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-bar a:hover {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
