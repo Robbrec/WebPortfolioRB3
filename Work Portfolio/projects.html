@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Projects - Software Portfolio</title>
     <link rel="stylesheet" href="styles.css">    
     <link rel="preload" href="Images/mountains.jpg" as="mountainsImg">
 </head>
 <body>
     <!-- Logo Banner -->
-    <header>    
+    <header>
         <img src="Images/rb3Logo.png" alt="Website Logo" class="logo" style="width: 150px; height: auto;">
     </header>
         <nav class="menu-bar">
@@ -24,35 +29,64 @@
     <main>
         <h1 class="ProjectsTitle">My Projects</h1>
 
-        <section class="projects">
-            <article class="project">
-                <h2>Project 1: Task Manager</h2>
-                <p>A web application to manage daily tasks efficiently with user authentication and priority levels.</p>
-                <button onclick="window.location.href='project1.html'">Project 1</button>
-            </article>
+        <div class="container">
+            <div class="slide">
+                <div class="item" style="background-image: url(Images/Calendar.jpg);">
+                    <div class="content">
+                        <div class="name">Calendar App</div>
+                        <div class="des">A web application to manage daily tasks efficiently with user authentication and priority levels.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Images/Weather.jpg);">
+                    <div class="content">
+                        <div class="name">Weather App</div>
+                        <div class="des">An application that fetches real-time weather data for any location using an API integration.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Images/SudokuGame.jpg);">
+                    <div class="content">
+                        <div class="name">Sudoku Game</div>
+                        <div class="des">A flash game of sudoku developed using python.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Images/Website.jpg);">
+                    <div class="content">
+                        <div class="name">Portfolio Website</div>
+                        <div class="des">This very website! A showcase of my skills in web design and development.</div>
+                        <button>See More</button>
+                    </div>
+                </div>                
+                <div class="item" style="background-image: url(Images/GameDev.png);">
+                    <div class="content">
+                        <div class="name">Unity First-Person Game</div>
+                        <div class="des">A passion project developed on Unity game engine.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Images/Golf.jpg);">
+                    <div class="content">
+                        <div class="name">Golf - Digital Scorecard</div>
+                        <div class="des">An end to end development of a digital scorecard using Arduinos.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+            </div>
 
-            <article class="project"> 
-                <h2>Project 2: Weather App</h2>
-                <p>An application that fetches real-time weather data for any location using an API integration.</p>
-                <button onclick="window.location.href='project2.html'">Project 2</button>
-            </article>
-
-            <article class="project">
-                <h2>Project 3: Sudoku Game</h2>
-                <p>A flash game of sudoku developed using python.</p>
-                <button onclick="window.location.href='project3.html'">Project 3</button>
-            </article>
-
-            <article class="project">
-                <h2>Project 4: Portfolio Website</h2>
-                <p>This very website! A showcase of my skills in web design and development.</p>
-                <button onclick="window.location.href='project4.html'">Project 4</button>
-            </article>
-        </section>
+            <div class="button">
+                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    <script src="app.js"></script>
     </main>
 
     <footer>
         <p>&copy; 2024 RBIII Software Portfolio</p>
     </footer>
+
+
 </body>
 </html>
